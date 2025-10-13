@@ -14,7 +14,9 @@
       background-image: url('photos/3.jpg');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-attachment: scroll; /* ✅ fixed mobile issue */
+      min-height: 100vh;
     }
 
     header {
@@ -61,27 +63,22 @@
       border-radius: 10px;
       margin-bottom: 50px;
       padding: 20px;
-      height: 300px; /* fixed height */
-      overflow: hidden;
-      gap: 20px; /* spacing between image and text */
+      gap: 20px;
     }
 
     .section img {
       max-width: 400px;
       width: 100%;
-      height: 100%;
+      height: auto; /* ✅ let image scale naturally */
       object-fit: cover;
       border-radius: 10px;
-      margin: 0; /* remove extra margin */
     }
 
     .section .text {
       flex: 1;
       min-width: 250px;
-      margin: 0; /* remove extra margin */
+      margin: 0;
       text-align: left;
-      overflow-y: auto;
-      max-height: 260px; /* slightly less than section height */
     }
 
     .section h2 {
@@ -103,18 +100,50 @@
       margin-top: 40px;
     }
 
+    /* ✅ Responsive fixes */
     @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
       .section {
         flex-direction: column;
-        height: auto; /* allow height to adjust on small screens */
         text-align: center;
+        padding: 15px;
       }
-      .section .text {
-        max-height: none;
-        text-align: center;
-      }
+
       .section img {
         height: 250px;
+      }
+
+      .section .text {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      nav a {
+        padding: 8px 15px;
+        font-size: 0.9em;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px auto;
+        width: 60%;
+      }
+
+      .section h2 {
+        font-size: 1.5em;
+      }
+
+      .section p {
+        font-size: 1em;
       }
     }
   </style>

@@ -11,10 +11,12 @@
       font-family: "Poppins", sans-serif;
       color: white;
       text-align: center;
-      background-image: url('photos/1.jpg'); /* replace with your image */
+      background-image: url('photos/1.jpg');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed; /* keeps background in place */
+      background-repeat: no-repeat;
+      background-attachment: scroll; /* ✅ fixed mobile issue */
+      min-height: 100vh; /* ensure it fills the screen */
     }
 
     header {
@@ -75,6 +77,43 @@
       font-size: 0.9em;
       margin-top: 40px;
     }
+
+    /* ✅ Responsive adjustments */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav a {
+        padding: 8px 15px;
+        font-size: 0.9em;
+      }
+
+      main {
+        width: 90%;
+        padding: 25px;
+      }
+
+      main h2 {
+        font-size: 1.6em;
+      }
+
+      main p {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px auto;
+        width: 60%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -109,7 +148,7 @@
   </main>
 
   <footer>
-    &copy; 2025 Save the Ocean Initiative | Made y Retaj Khalil 🌊
+    &copy; 2025 Save the Ocean Initiative | Made by Retaj Khalil 🌊
   </footer>
 
 </body>
