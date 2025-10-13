@@ -112,31 +112,44 @@
 
   /* Mobile responsive adjustments */
   @media screen and (max-width: 768px) {
-    .section {
-      flex-direction: column;
-      text-align: center;
-    }
-    .section .text {
-      text-align: center;
-    }
-    main {
-      padding: 25px 15px;
-      margin: 40px auto;
-    }
-    header h1 {
-      font-size: 1.9em;
-    }
-    nav a {
-      padding: 8px 15px;
-      font-size: 0.9em;
-    }
-    main h2 {
-      font-size: 1.6em;
-    }
-    main p {
-      font-size: 1em;
-    }
+  .section {
+    flex-direction: column;
+    text-align: center;
   }
+
+  .section .text {
+    text-align: center;
+    margin: 10px 0; /* optional spacing */
+  }
+
+  .section img {
+    height: 250px;      /* keeps consistent height */
+    margin: 10px auto;  /* centers image horizontally */
+  }
+
+  main {
+    padding: 25px 15px;
+    margin: 40px auto;
+  }
+
+  header h1 {
+    font-size: 1.9em;
+  }
+
+  nav a {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  main h2 {
+    font-size: 1.6em;
+  }
+
+  main p {
+    font-size: 1em;
+  }
+}
+
 </style>
 </head>
 <body>
