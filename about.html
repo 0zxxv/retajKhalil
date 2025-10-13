@@ -14,9 +14,7 @@
       background-image: url('photos/3.jpg');
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: scroll; /* ✅ fixed mobile issue */
-      min-height: 100vh;
+      background-attachment: fixed;
     }
 
     header {
@@ -63,15 +61,18 @@
       border-radius: 10px;
       margin-bottom: 50px;
       padding: 20px;
+      height: 300px;
+      overflow: hidden;
       gap: 20px;
     }
 
     .section img {
       max-width: 400px;
       width: 100%;
-      height: auto; /* ✅ let image scale naturally */
+      height: 100%;
       object-fit: cover;
       border-radius: 10px;
+      margin: 0;
     }
 
     .section .text {
@@ -79,6 +80,8 @@
       min-width: 250px;
       margin: 0;
       text-align: left;
+      overflow-y: auto;
+      max-height: 260px;
     }
 
     .section h2 {
@@ -100,50 +103,18 @@
       margin-top: 40px;
     }
 
-    /* ✅ Responsive fixes */
     @media screen and (max-width: 768px) {
-      header h1 {
-        font-size: 2em;
-      }
-
       .section {
         flex-direction: column;
+        height: auto;
         text-align: center;
-        padding: 15px;
       }
-
+      .section .text {
+        max-height: none;
+        text-align: center;
+      }
       .section img {
         height: 250px;
-      }
-
-      .section .text {
-        text-align: center;
-        margin-top: 10px;
-      }
-
-      nav a {
-        padding: 8px 15px;
-        font-size: 0.9em;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      header h1 {
-        font-size: 1.6em;
-      }
-
-      nav a {
-        display: block;
-        margin: 8px auto;
-        width: 60%;
-      }
-
-      .section h2 {
-        font-size: 1.5em;
-      }
-
-      .section p {
-        font-size: 1em;
       }
     }
   </style>
@@ -192,40 +163,6 @@
       <p>
         Plastic bags and sheets smother delicate <strong>coral reefs</strong> near Fasht Al Adhm and cover <strong>sea grass beds</strong>, which are nurseries for young fish. 
         In <strong>Tubli Bay</strong>, plastic gets trapped in mangrove roots, damaging trees that naturally filter water and protect the coast.
-      </p>
-    </div>
-  </div>
-
-  <div class="section">
-    <img src="photos/boat.jpg" alt="Tourism Impact">
-    <div class="text">
-      <h2>Impact on People and the Economy</h2>
-      <p>
-        Dirty beaches discourage tourism and harm local businesses. “Ghost nets” — abandoned fishing nets — continue to trap fish, 
-        and plastic debris can damage boat engines. As plastics break down, they release harmful chemicals affecting seafood and human health.
-      </p>
-    </div>
-  </div>
-
-  <div class="section">
-    <img src="photos/pearl.jpg" alt="Pearl Oyster">
-    <div class="text">
-      <h2>A National Symbol at Risk</h2>
-      <p>
-        The <strong>pearl oyster</strong>, a symbol of Bahrain’s heritage, depends on clean water. 
-        Plastic pollution threatens this important part of our identity. Protecting our waters means protecting culture, economy, and future.
-      </p>
-    </div>
-  </div>
-
-  <div class="section">
-    <img src="photos/bahrain.jpg" alt="Bahrain Island">
-    <div class="text">
-      <h2>Why This Matters for Bahrain</h2>
-      <p>
-        As a small island nation, Bahrain’s health and economy are directly connected to the sea. 
-        With limited land and coastline, every polluted beach is a loss we cannot afford. 
-        By understanding the problem, we can take action — keeping our beaches clean, wildlife safe, and oceans alive for generations.
       </p>
     </div>
   </div>
