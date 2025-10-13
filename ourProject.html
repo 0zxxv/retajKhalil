@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Project | Beach Cleaning</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      text-align: center;
+      background-image: url('photos/13.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      color: white;
+      border: 2px solid white;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: 0.3s;
+      background-color: transparent;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      margin: 60px auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+      width: 85%;
+      max-width: 1000px;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .section img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .section .text {
+      flex: 1;
+      min-width: 250px;
+      margin: 10px;
+      text-align: left;
+    }
+
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    main p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 15px 0;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .section .text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Our Project</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="members.html">Members</a>
+    <a href="about.html">About</a>
+    <a href="ourVision.html">Our Vision</a>
+    <a href="ourProject.html">Our Project</a>
+  </nav>
+</header>
+
+<main>
+  <div class="section">
+    <img src="photos/robot1.jpg" alt="BeachBot Prototype">
+    <div class="text">
+      <h2>BeachBot: The Robot Cleaner</h2>
+      <p>
+        BeachBot (BB) is our autonomous robot designed to clean beaches efficiently. 
+        It uses a camera and AI to detect plastic litter while leaving sand, seaweed, and shells intact.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="text">
+      <h2>How BeachBot Works</h2>
+      <p>
+        <strong>AI Eyes:</strong> Identifies plastic items like bottles and wrappers hidden in the sand.<br>
+        <strong>Gentle Grip:</strong> Robotic arms pick up litter without disturbing the environment.<br>
+        <strong>Solar Powered:</strong> Uses clean energy to operate for long hours on the beach.
+      </p>
+    </div>
+    <img src="photos/robot2.jpg" alt="BeachBot in action">
+  </div>
+
+  <div class="section">
+    <div class="text">
+      <h2>Why It Matters</h2>
+      <p>
+        BeachBot increases efficiency, targets plastic only, and can find small pieces humans might miss. 
+        Combined with human volunteers, it maximizes the cleanup impact and helps protect Bahrain’s marine life.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="text">
+      <h2>Next Steps</h2>
+      <p>
+        Collected plastic is sorted, cleaned, and recycled into new products. 
+        Every piece removed contributes to a circular economy — reducing waste, protecting wildlife, and keeping our beaches beautiful.
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Save the Ocean Initiative | Made by Retaj Khalil 🌊
+</footer>
+
+</body>
+</html>

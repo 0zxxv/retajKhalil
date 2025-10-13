@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Plastic Pollution in Bahrain</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      text-align: center;
+      background-image: url('photos/3.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      color: white;
+      border: 2px solid white;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: 0.3s;
+      background-color: transparent;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      margin: 60px auto;
+      width: 85%;
+      max-width: 1000px;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 10px;
+      margin-bottom: 50px;
+      padding: 20px;
+      height: 300px; /* fixed height */
+      overflow: hidden;
+      gap: 20px; /* spacing between image and text */
+    }
+
+    .section img {
+      max-width: 400px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 0; /* remove extra margin */
+    }
+
+    .section .text {
+      flex: 1;
+      min-width: 250px;
+      margin: 0; /* remove extra margin */
+      text-align: left;
+      overflow-y: auto;
+      max-height: 260px; /* slightly less than section height */
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    footer {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 15px 0;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        height: auto; /* allow height to adjust on small screens */
+        text-align: center;
+      }
+      .section .text {
+        max-height: none;
+        text-align: center;
+      }
+      .section img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Plastic Problem in Bahrain</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="members.html">Members</a>
+    <a href="about.html">About</a>
+    <a href="ourVision.html">Our Vision</a>
+    <a href="ourProject.html">Our Project</a>
+  </nav>
+</header>
+
+<main>
+  <div class="section">
+    <img src="photos/coastline.jpg" alt="Bahrain Coastline">
+    <div class="text">
+      <h2>The Plastic Problem on Bahrain's Beaches</h2>
+      <p>
+        Bahrain’s beautiful coastlines are vital for people, wildlife, and our economy. 
+        But plastic pollution is a growing problem — plastic bags, bottles, wrappers, and fishing waste wash up daily, harming the environment and marine life.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="photos/turtle.jpg" alt="Hawksbill Sea Turtle">
+    <div class="text">
+      <h2>Threats to Bahrain’s Wildlife</h2>
+      <p>
+        Endangered <strong>Hawksbill sea turtles</strong> often mistake plastic bags for jellyfish, leading to starvation. 
+        <strong>Socotra Cormorants</strong> can get tangled in fishing lines or six-pack rings, preventing them from flying or eating. 
+        Fish, crabs, and shrimp ingest <strong>microplastics</strong>, which can release toxins and enter our food chain.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="photos/fish.jpg" alt="Coral Reef">
+    <div class="text">
+      <h2>Damage to Fragile Habitats</h2>
+      <p>
+        Plastic bags and sheets smother delicate <strong>coral reefs</strong> near Fasht Al Adhm and cover <strong>sea grass beds</strong>, which are nurseries for young fish. 
+        In <strong>Tubli Bay</strong>, plastic gets trapped in mangrove roots, damaging trees that naturally filter water and protect the coast.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="photos/boat.jpg" alt="Tourism Impact">
+    <div class="text">
+      <h2>Impact on People and the Economy</h2>
+      <p>
+        Dirty beaches discourage tourism and harm local businesses. “Ghost nets” — abandoned fishing nets — continue to trap fish, 
+        and plastic debris can damage boat engines. As plastics break down, they release harmful chemicals affecting seafood and human health.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="photos/pearl.jpg" alt="Pearl Oyster">
+    <div class="text">
+      <h2>A National Symbol at Risk</h2>
+      <p>
+        The <strong>pearl oyster</strong>, a symbol of Bahrain’s heritage, depends on clean water. 
+        Plastic pollution threatens this important part of our identity. Protecting our waters means protecting culture, economy, and future.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="photos/bahrain.jpg" alt="Bahrain Island">
+    <div class="text">
+      <h2>Why This Matters for Bahrain</h2>
+      <p>
+        As a small island nation, Bahrain’s health and economy are directly connected to the sea. 
+        With limited land and coastline, every polluted beach is a loss we cannot afford. 
+        By understanding the problem, we can take action — keeping our beaches clean, wildlife safe, and oceans alive for generations.
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Save the Ocean Initiative | Made by Retaj Khalil 🌊
+</footer>
+
+</body>
+</html>
