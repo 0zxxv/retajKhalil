@@ -11,10 +11,19 @@
       font-family: "Poppins", sans-serif;
       color: white;
       text-align: center;
-      background-image: url('photos/14.jpg'); /* replace with your image */
+      background-image: url('photos/1.jpg'); /* replace with your image */
       background-size: cover;
       background-position: center;
-      background-attachment: fixed; /* keeps background in place */
+      background-repeat: no-repeat;
+      background-attachment: scroll; /* mobile-friendly */
+      min-height: 100vh;
+    }
+
+    /* Keep fixed background only on larger screens */
+    @media screen and (min-width: 769px) {
+      body {
+        background-attachment: fixed;
+      }
     }
 
     header {
@@ -68,6 +77,7 @@
       line-height: 1.6;
       font-size: 1.1em;
       text-align: center;
+      margin-bottom: 25px;
     }
 
     footer {
@@ -78,42 +88,62 @@
       font-size: 0.9em;
       margin-top: 40px;
     }
+
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 1.9em;
+      }
+      nav a {
+        padding: 8px 15px;
+        font-size: 0.9em;
+      }
+      main {
+        margin: 40px auto;
+        padding: 25px 15px;
+      }
+      main h2 {
+        font-size: 1.6em;
+      }
+      main p {
+        font-size: 1em;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Beach Cleaning & Plastic Pollution</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="members.html">Members</a>
-      <a href="about.html">About</a>
-      <a href="ourVision.html">Our Vision</a>
-      <a href="ourProject.html">Our Project</a>
-    </nav>
-  </header>
+<header>
+  <h1>Beach Cleaning & Plastic Pollution</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="members.html">Members</a>
+    <a href="about.html">About</a>
+    <a href="ourVision.html">Our Vision</a>
+    <a href="ourProject.html">Our Project</a>
+  </nav>
+</header>
 
-  <main>
-    <h2>Welcome to Our STREAM Project</h2>
-    <p>
-      This is our STREAM project, and it focuses on the issue of <strong>plastic pollution</strong> in the ocean. 
-      Our goal is to bring awareness to the serious problem of plastic waste that threatens marine life and coastal environments.
-    </p>
+<main>
+  <h2>Welcome to Our STREAM Project</h2>
+  <p>
+    This is our STREAM project, and it focuses on the issue of <strong>plastic pollution</strong> in the ocean. 
+    Our goal is to bring awareness to the serious problem of plastic waste that threatens marine life and coastal environments.
+  </p>
 
-    <p>
-      We aim to inspire people to take small but meaningful actions that can lead to a big change. 
-      By spreading knowledge and organizing cleanup efforts, we hope to begin the start of a turning point toward cleaner and healthier oceans — 
-      especially in an island nation like <strong>Bahrain</strong>, where the sea is part of our everyday life and heritage.
-    </p>
+  <p>
+    We aim to inspire people to take small but meaningful actions that can lead to a big change. 
+    By spreading knowledge and organizing cleanup efforts, we hope to begin the start of a turning point toward cleaner and healthier oceans — 
+    especially in an island nation like <strong>Bahrain</strong>, where the sea is part of our everyday life and heritage.
+  </p>
 
-    <p>
-      Together, we can make a difference — one beach at a time 🌊
-    </p>
-  </main>
+  <p>
+    Together, we can make a difference — one beach at a time 🌊
+  </p>
+</main>
 
-  <footer>
-    &copy; 2025 Save the Ocean Initiative | Made y Retaj Khalil 🌊
-  </footer>
+<footer>
+  &copy; 2025 Save the Ocean Initiative | Made by Retaj Khalil 🌊
+</footer>
 
 </body>
 </html>
