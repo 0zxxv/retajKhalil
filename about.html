@@ -61,9 +61,9 @@
       border-radius: 10px;
       margin-bottom: 50px;
       padding: 20px;
-      height: 300px;
+      height: 300px; /* fixed height */
       overflow: hidden;
-      gap: 20px;
+      gap: 20px; /* spacing between image and text */
     }
 
     .section img {
@@ -72,16 +72,16 @@
       height: 100%;
       object-fit: cover;
       border-radius: 10px;
-      margin: 0;
+      margin: 0; /* remove extra margin */
     }
 
     .section .text {
       flex: 1;
       min-width: 250px;
-      margin: 0;
+      margin: 0; /* remove extra margin */
       text-align: left;
       overflow-y: auto;
-      max-height: 260px;
+      max-height: 260px; /* slightly less than section height */
     }
 
     .section h2 {
@@ -106,7 +106,7 @@
     @media screen and (max-width: 768px) {
       .section {
         flex-direction: column;
-        height: auto;
+        height: auto; /* allow height to adjust on small screens */
         text-align: center;
       }
       .section .text {
@@ -163,6 +163,40 @@
       <p>
         Plastic bags and sheets smother delicate <strong>coral reefs</strong> near Fasht Al Adhm and cover <strong>sea grass beds</strong>, which are nurseries for young fish. 
         In <strong>Tubli Bay</strong>, plastic gets trapped in mangrove roots, damaging trees that naturally filter water and protect the coast.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="photos/boat.jpg" alt="Tourism Impact">
+    <div class="text">
+      <h2>Impact on People and the Economy</h2>
+      <p>
+        Dirty beaches discourage tourism and harm local businesses. “Ghost nets” — abandoned fishing nets — continue to trap fish, 
+        and plastic debris can damage boat engines. As plastics break down, they release harmful chemicals affecting seafood and human health.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="photos/pearl.jpg" alt="Pearl Oyster">
+    <div class="text">
+      <h2>A National Symbol at Risk</h2>
+      <p>
+        The <strong>pearl oyster</strong>, a symbol of Bahrain’s heritage, depends on clean water. 
+        Plastic pollution threatens this important part of our identity. Protecting our waters means protecting culture, economy, and future.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="photos/bahrain.jpg" alt="Bahrain Island">
+    <div class="text">
+      <h2>Why This Matters for Bahrain</h2>
+      <p>
+        As a small island nation, Bahrain’s health and economy are directly connected to the sea. 
+        With limited land and coastline, every polluted beach is a loss we cannot afford. 
+        By understanding the problem, we can take action — keeping our beaches clean, wildlife safe, and oceans alive for generations.
       </p>
     </div>
   </div>

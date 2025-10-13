@@ -14,31 +14,26 @@
       background-image: url('photos/14.jpg');
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: scroll; /* ✅ prevents mobile background glitch */
-      min-height: 100vh;
+      background-attachment: fixed;
     }
 
     header {
       background-color: rgba(0, 0, 0, 0.4);
-      padding: 30px 10px;
+      padding: 30px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.3em;
+      font-size: 2.5em;
     }
 
     nav {
-      margin-top: 15px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+      margin-top: 20px;
     }
 
     nav a {
       display: inline-block;
+      margin: 10px;
       padding: 10px 20px;
       color: white;
       border: 2px solid white;
@@ -54,12 +49,11 @@
 
     main {
       margin: 60px auto;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 40px 25px;
-      border-radius: 15px;
-      width: 90%;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 40px;
+      border-radius: 10px;
+      width: 85%;
       max-width: 900px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
     }
 
     main h2 {
@@ -70,43 +64,16 @@
     main p {
       line-height: 1.6;
       font-size: 1.1em;
-      margin-bottom: 30px;
-      text-align: justify;
+      text-align: center;
     }
 
     footer {
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.4);
       color: white;
-      padding: 15px 10px;
+      padding: 15px 0;
       font-size: 0.9em;
       margin-top: 40px;
-    }
-
-    /* ✅ Responsive adjustments for phones and tablets */
-    @media screen and (max-width: 768px) {
-      header h1 {
-        font-size: 1.9em;
-      }
-
-      nav a {
-        padding: 8px 15px;
-        font-size: 0.9em;
-      }
-
-      main {
-        margin: 40px auto;
-        padding: 25px 15px;
-      }
-
-      main h2 {
-        font-size: 1.6em;
-      }
-
-      main p {
-        font-size: 1em;
-        text-align: center;
-      }
     }
   </style>
 </head>
@@ -150,7 +117,7 @@
 </main>
 
 <footer>
-  &copy; 2025 Save the Ocean Initiative | Made by Retaj Khalil 🌊
+  &copy; 2025 Save the Ocean Initiative | Made By Retaj Khalil 🌊
 </footer>
 
 </body>
