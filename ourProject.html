@@ -14,7 +14,16 @@
       background-image: url('photos/13.jpg');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-attachment: scroll; /* mobile-friendly */
+      min-height: 100vh;
+    }
+
+    /* Fixed background only on larger screens */
+    @media screen and (min-width: 769px) {
+      body {
+        background-attachment: fixed;
+      }
     }
 
     header {
